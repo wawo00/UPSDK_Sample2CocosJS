@@ -4,16 +4,18 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion PROP_COMPILE_SDK_VERSION.toInteger()
-    buildToolsVersion "25.0.0"
+    buildToolsVersion "26.0.1"
 
     defaultConfig {
 //        applicationId "example.cocos2dx.js"
-        applicationId "com.bingo.pinball.avid"
+        applicationId "com.aaa.bbb.ccc"
 
         minSdkVersion PROP_MIN_SDK_VERSION
         targetSdkVersion PROP_TARGET_SDK_VERSION
+        multiDexEnabled true
         versionCode 1
         versionName "1.0"
+
         ndk {
             abiFilters 'armeabi-v7a'
         }
@@ -177,16 +179,50 @@ repositories {
     }
 }
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+//    compile fileTree(dir: 'libs', include: ['*.jar'])
     compile project(':libcocos2dx')
-    compile(name: 'UPAdsSdk_js_3.0.03_dex', ext: 'aar')
-
-    compile 'com.google.android.gms:play-services-ads:11.0.4'
-    compile(name: 'inmobi_ads', ext: 'aar')
+    compile(name: 'UPAdsSdk_js_3.0.04_dex', ext: 'aar')
+    //networks
+    compile(name: 'adcolony_ads', ext: 'aar')
+    compile(name: 'amazon_ads', ext: 'aar')
+    compile(name: 'applovin_ads', ext: 'aar')
+    compile(name: 'appnext_ads', ext: 'aar')
+    compile(name: 'appnext_core', ext: 'aar')
     compile(name: 'batmobi_ads', ext: 'aar')
-    compile 'com.android.support:support-v4:24.1.1'
-    compile 'com.android.support:appcompat-v7:24.1.1'
-    compile 'com.android.support:support-annotations:24.1.1'
-    compile 'com.android.support:customtabs:24.1.1'
-    compile 'com.android.support:cardview-v7:24.1.1'
+    compile(name: 'centrixlink_ads', ext: 'aar')
+    compile(name: 'chartboost_ads', ext: 'aar')
+    compile(name: 'domob_ads', ext: 'aar')
+    compile(name: 'facebook_ads', ext: 'aar')
+    compile(name: 'inmobi_ads', ext: 'aar')
+    compile(name: 'ironsource_ads', ext: 'aar')
+    compile(name: 'maio_ads', ext: 'aar')
+    compile(name: 'mobpower_ads', ext: 'aar')
+    compile(name: 'mobvista_ads', ext: 'aar')
+    compile(name: 'oneway_ads', ext: 'aar')
+    compile(name: 'playable_ads', ext: 'aar')
+    compile(name: 'tapjoy_ads', ext: 'aar')
+    compile(name: 'unity_ads', ext: 'aar')
+    compile(name: 'vk_ads', ext: 'aar')
+    compile(name: 'vungle_ads', ext: 'aar')
+    compile(name: 'youappi_ads', ext: 'aar')
+    compile(name: 'youlan_ads', ext: 'aar')
+    compile(name: 'facebook_exo_player', ext: 'aar')
+    compile(name: 'facebook_ads', ext: 'aar')
+//    //头条
+//    compile(name: 'toutiao_ads', ext: 'aar')
+//    compile(name: 'toutiao_ads_sdk', ext: 'aar')
+//    compile(name: 'android-gif-drawable', ext: 'aar')
+
+//support-libs
+//    compile(name: 'animated-vector-drawable-26.1.0', ext: 'aar')
+    compile(name: 'gson-2.7', ext: 'jar')
+    compile 'com.android.support:support-v4:26.1.0'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+//    compile 'com.android.support:recyclerview-v7:26.1.0'
+    compile 'com.android.support:multidex:1.0.1'
+//    compile 'com.android.support:customtabs:26.1.0'
+    compile 'com.google.android.gms:play-services-ads:15.0.1'
+
+
+
 }

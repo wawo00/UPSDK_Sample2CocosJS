@@ -416,6 +416,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-safeguard" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jniLibs" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifests" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/multi-dex" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/ndkBuild" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/pre-dexed" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/res" />
@@ -426,31 +427,56 @@
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
       <excludeFolder url="file://$MODULE_DIR$/build/tmp" />
     </content>
-    <orderEntry type="jdk" jdkName="Android API 25 Platform" jdkType="Android SDK" />
+    <orderEntry type="jdk" jdkName="Android API 26 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-safetynet-11.0.4" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:support-core-utils-25.2.0" level="project" />
-    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-clearcut-11.0.4" level="project" />
-    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-tasks-11.0.4" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:support-core-ui-25.2.0" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:customtabs-24.1.1" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:support-media-compat-25.2.0" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:support-compat-25.2.0" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:support-vector-drawable-24.1.1" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:support-annotations:25.2.0@jar" level="project" />
-    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-ads-11.0.4" level="project" />
+    <orderEntry type="library" exported="" name="com.android.support:multidex-1.0.1" level="project" />
+    <orderEntry type="library" exported="" name="com.android.support:support-media-compat-26.1.0" level="project" />
+    <orderEntry type="library" exported="" name="vungle_ads:@aar" level="project" />
+    <orderEntry type="library" exported="" name="centrixlink_ads:@aar" level="project" />
+    <orderEntry type="library" exported="" name="android.arch.lifecycle:common:1.0.0@jar" level="project" />
+    <orderEntry type="library" exported="" name="mobpower_ads:@aar" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="com.android.support:multidex-instrumentation-1.0.1" level="project" />
+    <orderEntry type="library" exported="" name=":gson-2.7:@jar" level="project" />
+    <orderEntry type="library" exported="" name="chartboost_ads:@aar" level="project" />
+    <orderEntry type="library" exported="" name="playable_ads:@aar" level="project" />
+    <orderEntry type="library" exported="" name="com.android.support:support-fragment-26.1.0" level="project" />
+    <orderEntry type="library" exported="" name="com.android.support:support-vector-drawable-26.1.0" level="project" />
+    <orderEntry type="library" exported="" name="android.arch.lifecycle:runtime-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="com.android.support:appcompat-v7-26.1.0" level="project" />
+    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-ads-base-15.0.1" level="project" />
+    <orderEntry type="library" exported="" name="oneway_ads:@aar" level="project" />
     <orderEntry type="library" exported="" name="batmobi_ads:@aar" level="project" />
-    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-ads-lite-11.0.4" level="project" />
-    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-basement-11.0.4" level="project" />
+    <orderEntry type="library" exported="" name="com.android.support:support-annotations:26.1.0@jar" level="project" />
+    <orderEntry type="library" exported="" name="domob_ads:@aar" level="project" />
     <orderEntry type="library" exported="" name="inmobi_ads:@aar" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:animated-vector-drawable-24.1.1" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:appcompat-v7-24.1.1" level="project" />
-    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-gass-11.0.4" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:support-v4-25.2.0" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:cardview-v7-24.1.1" level="project" />
-    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-base-11.0.4" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:support-fragment-25.2.0" level="project" />
-    <orderEntry type="library" exported="" name="UPAdsSdk_js_3.0.03_dex:@aar" level="project" />
+    <orderEntry type="library" exported="" name="com.android.support:support-core-utils-26.1.0" level="project" />
+    <orderEntry type="library" exported="" name="com.android.support:support-core-ui-26.1.0" level="project" />
+    <orderEntry type="library" exported="" name="applovin_ads:@aar" level="project" />
+    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-basement-15.0.1" level="project" />
+    <orderEntry type="library" exported="" name="tapjoy_ads:@aar" level="project" />
+    <orderEntry type="library" exported="" name="com.android.support:support-compat-26.1.0" level="project" />
+    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-ads-15.0.1" level="project" />
+    <orderEntry type="library" exported="" name="youappi_ads:@aar" level="project" />
+    <orderEntry type="library" exported="" name="adcolony_ads:@aar" level="project" />
+    <orderEntry type="library" exported="" name="facebook_exo_player:@aar" level="project" />
+    <orderEntry type="library" exported="" name="android.arch.core:common:1.0.0@jar" level="project" />
+    <orderEntry type="library" exported="" name="com.android.support:customtabs-26.1.0" level="project" />
+    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-ads-lite-15.0.1" level="project" />
+    <orderEntry type="library" exported="" name="com.android.support:support-v4-26.1.0" level="project" />
+    <orderEntry type="library" exported="" name="mobvista_ads:@aar" level="project" />
+    <orderEntry type="library" exported="" name="maio_ads:@aar" level="project" />
+    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-ads-identifier-15.0.1" level="project" />
+    <orderEntry type="library" exported="" name="com.android.support:animated-vector-drawable-26.1.0" level="project" />
+    <orderEntry type="library" exported="" name="vk_ads:@aar" level="project" />
+    <orderEntry type="library" exported="" name="UPAdsSdk_js_3.0.04_dex:@aar" level="project" />
+    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-gass-15.0.1" level="project" />
+    <orderEntry type="library" exported="" name="unity_ads:@aar" level="project" />
+    <orderEntry type="library" exported="" name="appnext_core:@aar" level="project" />
+    <orderEntry type="library" exported="" name="facebook_ads:@aar" level="project" />
+    <orderEntry type="library" exported="" name="appnext_ads:@aar" level="project" />
+    <orderEntry type="library" exported="" name="amazon_ads:@aar" level="project" />
+    <orderEntry type="library" exported="" name="youlan_ads:@aar" level="project" />
+    <orderEntry type="library" exported="" name="ironsource_ads:@aar" level="project" />
     <orderEntry type="module" module-name="libcocos2dx" exported="" />
   </component>
 </module>
