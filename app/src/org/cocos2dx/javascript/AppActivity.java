@@ -24,12 +24,32 @@ THE SOFTWARE.
 package org.cocos2dx.javascript;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.util.Log;
+
+import com.hola.pay.HolaPay;
+import com.hola.sdk.HolaAnalysis;
+import com.up.ads.UPAdsSdk;
+
 import org.cocos2dx.lib.Cocos2dxActivity;
 import org.cocos2dx.lib.Cocos2dxGLSurfaceView;
 
 public class AppActivity extends Cocos2dxActivity {
+    int count=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        UPAdsSdk.init(this, UPAdsSdk.UPAdsGlobalZone.UPAdsGlobalZoneAuto);
+
+        new Handler(getMainLooper()).postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Log.e("analysis", count+"");
+                count++;
+                setHolyAnalysis();
+            }
+        }, 4 * 1000);
+
+
         super.setEnableVirtualButton(false);
         super.onCreate(savedInstanceState);
         // Workaround in https://stackoverflow.com/questions/16283079/re-launch-of-activity-on-home-button-but-only-the-first-time/16447508
@@ -42,6 +62,15 @@ public class AppActivity extends Cocos2dxActivity {
         }
 
         // DO OTHER INITIALIZATION BELOW
-        
+
+    }
+    public void setHolyAnalysis(){
+        HolaAnalysis.init(getApplicationContext(), "888888", "32400");
+        String openID = HolaAnalysis.getOpenId(AppActivity.this);
+        Log.e("analysis_openid", openID);
+        HolaAnalysis.setCustomerId("666666");
+        HolaAnalysis.log("hola_init", "successful");
+        HolaPay.logPayment("123456789", "purchase_json", "purchase_signature");
+
     }
 }
