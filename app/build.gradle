@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
 //        applicationId "example.cocos2dx.js"
-        applicationId "com.aaa.bbb.ccc"
+        applicationId "com.holaverse.holagames.wt" //注意名称和dap中manifest中provide要一致
 
         minSdkVersion PROP_MIN_SDK_VERSION
         targetSdkVersion PROP_TARGET_SDK_VERSION
@@ -210,10 +210,19 @@ dependencies {
     compile(name: 'facebook_ads', ext: 'aar')
     //统计包
     compile(name: 'analysissdk-gaid_R3.1.1.8', ext: 'aar')
+
+
+
 //    //头条
 //    compile(name: 'toutiao_ads', ext: 'aar')
 //    compile(name: 'toutiao_ads_sdk', ext: 'aar')
 //    compile(name: 'android-gif-drawable', ext: 'aar')
+
+    //dap
+    compile(name: 'dap_ads', ext: 'aar')
+    compile(name: 'dap_ads_cw', ext: 'aar')
+    compile(name: 'dap_ads_vd', ext: 'aar')
+    compile(name: 'palette-v7-26.1.0', ext: 'aar')
 
 //support-libs
 //    compile(name: 'animated-vector-drawable-26.1.0', ext: 'aar')
