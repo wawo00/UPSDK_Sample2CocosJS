@@ -181,52 +181,34 @@ repositories {
 dependencies {
 //    compile fileTree(dir: 'libs', include: ['*.jar'])
     compile project(':libcocos2dx')
-    compile(name: 'UPAdsSdk_js_3.0.05_dex', ext: 'aar')
+    compile(name: 'UPAdsSdk_CocosJs_3.0.06_dex', ext: 'aar')
+
     //networks
     compile(name: 'adcolony_ads', ext: 'aar')
-    compile(name: 'amazon_ads', ext: 'aar')
-    compile(name: 'applovin_ads', ext: 'aar')
-    compile(name: 'appnext_ads', ext: 'aar')
-    compile(name: 'appnext_core', ext: 'aar')
-    compile(name: 'batmobi_ads', ext: 'aar')
     compile(name: 'centrixlink_ads', ext: 'aar')
     compile(name: 'chartboost_ads', ext: 'aar')
-    compile(name: 'domob_ads', ext: 'aar')
-    compile(name: 'facebook_ads', ext: 'aar')
+
     compile(name: 'inmobi_ads', ext: 'aar')
-    compile(name: 'ironsource_ads', ext: 'aar')
-    compile(name: 'maio_ads', ext: 'aar')
     compile(name: 'mobpower_ads', ext: 'aar')
     compile(name: 'mobvista_ads', ext: 'aar')
     compile(name: 'oneway_ads', ext: 'aar')
     compile(name: 'playable_ads', ext: 'aar')
-    compile(name: 'tapjoy_ads', ext: 'aar')
-    compile(name: 'unity_ads', ext: 'aar')
-    compile(name: 'vk_ads', ext: 'aar')
     compile(name: 'vungle_ads', ext: 'aar')
-    compile(name: 'youappi_ads', ext: 'aar')
     compile(name: 'youlan_ads', ext: 'aar')
-    compile(name: 'facebook_exo_player', ext: 'aar')
-    compile(name: 'facebook_ads', ext: 'aar')
+
+
     //统计包
 //    compile(name: 'analysissdk-gaid_R3.1.1.8', ext: 'aar')
 //    //头条
 //    compile(name: 'toutiao_ads', ext: 'aar')
 //    compile(name: 'toutiao_ads_sdk', ext: 'aar')
 //    compile(name: 'android-gif-drawable', ext: 'aar')
-    //dap
-    compile(name: 'dap_ads', ext: 'aar')
-    compile(name: 'dap_ads_cw', ext: 'aar')
-    compile(name: 'dap_ads_vd', ext: 'aar')
-    compile(name: 'palette-v7-26.1.0', ext: 'aar')
+
 //support-libs
-//    compile(name: 'animated-vector-drawable-26.1.0', ext: 'aar')
     compile(name: 'gson-2.7', ext: 'jar')
     compile 'com.android.support:support-v4:26.1.0'
     compile 'com.android.support:appcompat-v7:26.1.0'
-//    compile 'com.android.support:recyclerview-v7:26.1.0'
     compile 'com.android.support:multidex:1.0.1'
-//    compile 'com.android.support:customtabs:26.1.0'
     compile 'com.google.android.gms:play-services-ads:16.0.0'
 
 }
