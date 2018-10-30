@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
 //        applicationId "example.cocos2dx.js"
-        applicationId "com.holaverse.holagames.wt" //注意名称和dap中manifest中provide要一致
+        applicationId "roy.wan.inland" //注意名称和dap中manifest中provide要一致
 
         minSdkVersion PROP_MIN_SDK_VERSION
         targetSdkVersion PROP_TARGET_SDK_VERSION
@@ -195,7 +195,6 @@ dependencies {
     compile(name: 'playable_ads', ext: 'aar')
     compile(name: 'vungle_ads', ext: 'aar')
     compile(name: 'youlan_ads', ext: 'aar')
-
 
     //统计包
 //    compile(name: 'analysissdk-gaid_R3.1.1.8', ext: 'aar')
