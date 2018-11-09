@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
 //        applicationId "example.cocos2dx.js"
-        applicationId "roy.wan.foreign"
+        applicationId "adam.lean.foreign"
         minSdkVersion PROP_MIN_SDK_VERSION
         targetSdkVersion PROP_TARGET_SDK_VERSION
         multiDexEnabled true
@@ -193,7 +193,8 @@ dependencies {
     compile(name: 'ironsource_ads', ext: 'aar')
     compile(name: 'mobpower_ads', ext: 'aar')
     compile(name: 'mobvista_ads', ext: 'aar')
-    compile(name: 'playable_ads', ext: 'aar')
+//    compile(name: 'playable_ads', ext: 'aar')
+       compile(name: 'batmobi_ads', ext: 'aar')
     compile(name: 'tapjoy_ads', ext: 'aar')
     compile(name: 'unity_ads', ext: 'aar')
     compile(name: 'vungle_ads', ext: 'aar')
