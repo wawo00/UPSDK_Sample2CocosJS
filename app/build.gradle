@@ -185,12 +185,10 @@ dependencies {
 
     //networks
 
-    compile(name: 'inmobi_ads', ext: 'aar')
     compile(name: 'mobvista_ads', ext: 'aar')
     compile(name: 'oneway_ads', ext: 'aar')
     compile(name: 'playable_ads', ext: 'aar')
     compile(name: 'vungle_ads', ext: 'aar')
-    compile(name: 'youlan_ads', ext: 'aar')
     //统计包
 //    compile(name: 'analysissdk-gaid_R3.1.1.8', ext: 'aar')
 //    //头条
