@@ -435,29 +435,25 @@
     <orderEntry type="library" exported="" name="com.google.android.gms:play-services-ads-identifier-16.0.0" level="project" />
     <orderEntry type="library" exported="" name="android.arch.lifecycle:common:1.0.0@jar" level="project" />
     <orderEntry type="library" exported="" name="UPAdsSdk_CocosJs_3.0.06_dex:@aar" level="project" />
-    <orderEntry type="library" exported="" name="mobpower_ads:@aar" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="com.android.support:multidex-instrumentation-1.0.1" level="project" />
     <orderEntry type="library" exported="" name=":gson-2.7:@jar" level="project" />
     <orderEntry type="library" exported="" name="chartboost_ads:@aar" level="project" />
+    <orderEntry type="library" exported="" name="playable_ads:@aar" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:support-fragment-26.1.0" level="project" />
-    <orderEntry type="library" exported="" name="palette-v7-26.1.0:@aar" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:support-vector-drawable-26.1.0" level="project" />
     <orderEntry type="library" exported="" name="android.arch.lifecycle:runtime-1.0.0" level="project" />
-    <orderEntry type="library" exported="" name="dap_ads_cw:@aar" level="project" />
     <orderEntry type="library" exported="" name="com.google.android.gms:play-services-basement-16.0.1" level="project" />
     <orderEntry type="library" exported="" name="com.google.android.gms:play-services-ads-16.0.0" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:appcompat-v7-26.1.0" level="project" />
-    <orderEntry type="library" exported="" name="batmobi_ads:@aar" level="project" />
-    <orderEntry type="library" exported="" name="dap_ads_vd:@aar" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:support-annotations:26.1.0@jar" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:support-core-utils-26.1.0" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:support-core-ui-26.1.0" level="project" />
     <orderEntry type="library" exported="" name="applovin_ads:@aar" level="project" />
-    <orderEntry type="library" exported="" name="tapjoy_ads:@aar" level="project" />
     <orderEntry type="library" exported="" name="com.google.android.gms:play-services-gass-16.0.0" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:support-compat-26.1.0" level="project" />
     <orderEntry type="library" exported="" name="youappi_ads:@aar" level="project" />
     <orderEntry type="library" exported="" name="adcolony_ads:@aar" level="project" />
+    <orderEntry type="library" exported="" name="displayio_ads:@aar" level="project" />
     <orderEntry type="library" exported="" name="facebook_exo_player:@aar" level="project" />
     <orderEntry type="library" exported="" name="android.arch.core:common:1.0.0@jar" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:customtabs-26.1.0" level="project" />
@@ -465,11 +461,8 @@
     <orderEntry type="library" exported="" name="mobvista_ads:@aar" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:animated-vector-drawable-26.1.0" level="project" />
     <orderEntry type="library" exported="" name="unity_ads:@aar" level="project" />
-    <orderEntry type="library" exported="" name="appnext_core:@aar" level="project" />
     <orderEntry type="library" exported="" name="facebook_ads:@aar" level="project" />
-    <orderEntry type="library" exported="" name="appnext_ads:@aar" level="project" />
     <orderEntry type="library" exported="" name="com.google.android.gms:play-services-ads-lite-16.0.0" level="project" />
-    <orderEntry type="library" exported="" name="amazon_ads:@aar" level="project" />
     <orderEntry type="library" exported="" name="ironsource_ads:@aar" level="project" />
     <orderEntry type="module" module-name="libcocos2dx" exported="" />
   </component>
