@@ -100,21 +100,17 @@
 -keeppackagenames 'retrofit2'
 # vungle end
 
-# mobvista
+# mintegral
 -keepattributes Signature
 -keepattributes *Annotation*
 -keep class com.mintegral.** {*;}
 -keep interface com.mintegral.** {*;}
-
--keep class com.mobvista.** {*; }
--keep interface com.mobvista.** {*; }
 -keep class android.support.v4.** { *; }
--dontwarn com.mobvista.**
 -dontwarn com.mintegral.**
 -keep class **.R$* { public static final int mintegral*; }
 -keep class com.alphab.** {*; }
 -keep interface com.alphab.** {*; }
-# mobvista end
+# mintegral end
 
 # unity
 -keepattributes SourceFile,LineNumberTable
@@ -124,11 +120,6 @@
 -keep class com.unity3d.services.** {*;}
 -dontwarn com.google.ar.core.**
 # unity end
-
-# appnext
--keep class com.appnext.** { *; }
--dontwarn com.appnext.**
-# appnext end
 
 # applovin
 -keep class com.applovin.** { *; }
@@ -170,45 +161,6 @@
 -dontwarn com.mopub.**
 # vk end
 
-# inmobi
--keepattributes SourceFile,LineNumberTable
--keep class com.inmobi.** { *; }
--dontwarn com.inmobi.**
--keep public class com.google.android.gms.**
--dontwarn com.google.android.gms.**
--dontwarn com.squareup.picasso.**
--keep class com.google.android.gms.ads.identifier.AdvertisingIdClient{
-     public *;
-}
--keep class com.google.android.gms.ads.identifier.AdvertisingIdClient$Info{
-     public *;
-}
--keep class com.squareup.picasso.** {*;}
--dontwarn com.squareup.picasso.**
--dontwarn com.squareup.okhttp.**
--keep class com.moat.** {*;}
--dontwarn com.moat.**
--keep class com.integralads.avid.library.* {*;}
-# inmobi end
-
-# dap
--keep class com.duapps.ad.**{*;}
--dontwarn com.duapps.ad.**
--keep public class * extends android.content.BroadcastReceiver
--keep public class * extends android.app.Activity
--keep public class * extends android.app.Application
--keep public class * extends android.content.ContentProvider
--keep class com.dianxinos.DXStatService.stat.TokenManager {public static java.lang.String getToken(android.content.Context); }
--keep public class * extends android.content.BroadcastReceiver
--keep public class * extends android.content.ContentProvider
--keepnames @com.google.android.gms.common.annotation.KeepName class *
--keepclassmembernames class * {@com.google.android.gms.common.annotation.KeepName *;}
--keep class com.google.android.gms.common.GooglePlayServicesUtil {public <methods>;}
--keep class com.google.android.gms.ads.identifier.AdvertisingIdClient {public <methods>;}
--keep class com.google.android.gms.ads.identifier.AdvertisingIdClient$Info {public <methods>;}
--keep class com.duapps.ad.banner.BannerListener {*;}
-# dap end
-
 # maio
 -keep class jp.maio.sdk.android.** { *; }
 -dontwarn jp.maio.sdk.android.**
@@ -227,85 +179,11 @@
 -keep class mobi.oneway.sdk.** {*;}
 # oneway end
 
-# dap
--keep class com.duapps.ad.**{*;}
--dontwarn com.duapps.ad.**
--keep public class * extends android.content.BroadcastReceiver
--keep public class * extends android.app.Activity
--keep public class * extends android.app.Application
--keep public class * extends android.content.ContentProvider
--keep class com.dianxinos.DXStatService.stat.TokenManager {public static java.lang.String getToken(android.content.Context); }
--keep public class * extends android.content.BroadcastReceiver
--keep public class * extends android.content.ContentProvider
--keepnames @com.google.android.gms.common.annotation.KeepName class *
--keepclassmembernames class * {@com.google.android.gms.common.annotation.KeepName *;}
--keep class com.google.android.gms.common.GooglePlayServicesUtil {public <methods>;}
--keep class com.google.android.gms.ads.identifier.AdvertisingIdClient {public <methods>;}
--keep class com.google.android.gms.ads.identifier.AdvertisingIdClient$Info {public <methods>;}
--keep class com.duapps.ad.banner.BannerListener {*;}
-# dap end
-
-# domob
--dontwarn cn.domob.**
--keep class cn.domob.** { *; }
--dontwarn com.dvx.**
--keep class com.dvx.**{ *; }
--dontwarn com.pad.android_independent_video_sdk.**
--keep class com.pad.android_independent_video_sdk.** { *; }
--dontwarn android.support.v4.**
--keep class android.support.v4.** { *; }
-# domob end
-
 # gdt
 -keep class com.qq.e.** {*;}
 -keep class android.support.v4.** {public *;}
 -keep class android.support.v7.** {public *;}
 # gdt end
-
-# youappi
--keep class com.google.gson.**{ *;}
--keep class com.google.android.gms.**{*;}
--keep class com.youappi.sdk.**{*;}
--keep class com.moat.** { *; }
--keep class com.ai.t.** { *; }
--keep interface com.youappi.sdk.**{*;}
--keep enum com.youappi.sdk.**{*;}
--keepclassmembers class * {
-   @android.webkit.JavascriptInterface <methods>;
-}
--dontwarn com.youappi.sdk.**
--dontwarn com.ai.t.network.**
-# youappi end
-
-# tapjoy
--keep class com.tapjoy.** { *; }
--keepattributes JavascriptInterface
--keepattributes *Annotation*
--keep class * extends java.util.ListResourceBundle {
-protected Object[][] getContents();
-}
--keep public class com.google.android.gms.common.internal.safeparcel.SafeParcelable {
-public static final *** NULL;
-}
--keepnames @com.google.android.gms.common.annotation.KeepName class *
--keepclassmembernames class * {
-@com.google.android.gms.common.annotation.KeepName *;
-}
--keepnames class * implements android.os.Parcelable {
-public static final ** CREATOR;
-}
--keep class com.google.android.gms.ads.identifier.** { *; }
--dontwarn com.tapjoy.**
-# tapjoy end
-
-# centrixlink
--dontwarn com.centrixlink.**
--keep class com.centrixlink.**  { *; }
-# centrixlink end
-
-# youlan
--keep class com.youlan.youlansdk.** { *;}
-# youlan end
 
 # toutiao
 -keep class com.bytedance.sdk.openadsdk.** { *; }
@@ -318,20 +196,4 @@ public static final ** CREATOR;
 # amazon
 -keep class com.amazon.device.ads.** { *; }
 # amazon end
-
-# mobpower
--keepattributes Signature
--keepattributes *Annotation*
--keep class com.mobpower.** {*; }
--keep class com.mrad.** {*; }
--keep class com.power.** {*; }
--keepclassmembers class * implements android.os.Parcelable {
-    public static final ** CREATOR;
-}
-# mobpower end
-
-# display.io
--keep class io.display.sdk.** { *;}
--dontwarn io.display.sdk.**
-# display.io end
 
