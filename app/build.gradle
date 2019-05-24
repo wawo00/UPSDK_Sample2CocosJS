@@ -185,9 +185,24 @@ repositories {
     }
 }
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar',".aar"])
+//    compile fileTree(dir: 'libs', include: ['*.jar',".aar"])
     compile project(':libcocos2dx')
     compile(name: 'UPAdsSdk_CocosJs_3.0.07_dex', ext: 'aar')
+
+    compile(name: 'gson-2.7', ext: 'jar')
+    compile(name: 'glide-3.7.0', ext: 'jar')
+    compile(name:'playable_ads',ext:'aar')
+    //inland
+    compile(name: 'gdt_ads', ext: 'aar')
+    compile(name: 'mintegral_ads', ext: 'aar')
+    compile(name: 'oneway_ads', ext: 'aar')
+    compile(name: 'playable_ads', ext: 'aar')
+    compile(name: 'toutiao_ads', ext: 'aar')
+    compile(name: 'vungle_ads', ext: 'aar')
+    compile(name: 'android-gif-drawable', ext: 'aar')
+    //30067新增的两个联盟
+    compile(name: 'sigmob_ads',ext:'aar')
+    compile(name: 'baidu_ads',ext:'aar')
 
     compile 'com.android.support:support-v4:26.1.0'
     compile 'com.android.support:appcompat-v7:26.1.0'

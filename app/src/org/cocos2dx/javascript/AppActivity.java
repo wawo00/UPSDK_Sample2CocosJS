@@ -23,21 +23,35 @@ THE SOFTWARE.
 ****************************************************************************/
 package org.cocos2dx.javascript;
 
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
-import android.util.Log;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 
-
-import com.up.ads.UPAdsSdk;
 
 import org.cocos2dx.lib.Cocos2dxActivity;
-import org.cocos2dx.lib.Cocos2dxGLSurfaceView;
+
+import static android.Manifest.permission.READ_PHONE_STATE;
+import static android.Manifest.permission.REQUEST_INSTALL_PACKAGES;
+import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
 public class AppActivity extends Cocos2dxActivity {
     int count=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        UPAdsSdk.init(this, UPAdsSdk.UPAdsGlobalZone.UPAdsGlobalZoneAuto);
+
+        //申请动态权限
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (ContextCompat.checkSelfPermission(AppActivity.this, WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
+                    || ContextCompat.checkSelfPermission(AppActivity.this, REQUEST_INSTALL_PACKAGES) != PackageManager.PERMISSION_GRANTED
+                    || ContextCompat.checkSelfPermission(AppActivity.this, READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(AppActivity.this, new String[]{WRITE_EXTERNAL_STORAGE, REQUEST_INSTALL_PACKAGES, READ_PHONE_STATE}, 001);
+            }
+        }
+
+
 
 //        new Handler(getMainLooper()).postDelayed(new Runnable() {
 //            @Override
@@ -72,4 +86,10 @@ public class AppActivity extends Cocos2dxActivity {
 //        HolaPay.logPayment("123456789", "purchase_json", "purchase_signature");
 //
 //    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
+
 }
