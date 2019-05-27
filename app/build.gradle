@@ -182,11 +182,11 @@ repositories {
     }
 }
 dependencies {
-    compile fileTree(include: ['*.jar','*.aar'], dir: 'libs')
+//    compile fileTree(include: ['*.jar','*.aar'], dir: 'libs')
     compile project(':libcocos2dx')
 
     //core
-    compile(name: 'UPAdsSdk_CocosJs_3.0.07_dex', ext: 'aar')
+    compile(name: 'UPAdsSdk_CocosJs_3.0.07.4_dex', ext: 'aar')
 
     //networks
     compile(name: 'adcolony_ads', ext: 'aar')
